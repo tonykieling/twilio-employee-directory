@@ -1,8 +1,11 @@
 'use strict';
 
 const mongoose = require('mongoose');
+mongoose.set('debug', true);
 
 const Employee = new mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,
+
   fullName: {
     type: String
   },
